@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Fortnite</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Lato:ital,wght@0,300;0,700;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <!-- <a href="index.html"><img src="images/flogore.png"></a> -->
+            <div class="nav-links" id="navLinks">
+                <!-- Icon possibly change -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">homepage</a></li>
+                <li><a href="about.html">get to know me</a></li>
+                <li><a href="extra.html">extracurriculars</a></li>
+                <li><a href="explore.html">projects</a></li>
+
+    
+                </ul>
+            </div>
+            <!-- Icon possibly change -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+<section class="explore">
+    <h1>extracurriculars;</h1>
+    <h4>my innate curoisty has led me to join, lead, and delegate within various organizations.</h1>
+    
+    <div class="row">
+        <div class="explore1-col">
+            <img src="images/robot.jpg">
+            <h3>• mechanical / drive team | <br> FIRST Robotics</h3>
+            <p>I designed and developed mechanical components and assemblies using CAD software like SolidWorks and Fusion 360 within team 4421. Additionally, I applied mathematical thinking and engineering skills to create and test efficient intaking mechanisms and robot movement strategies through the prototyping process.</p>
+        </div>
+
+        <div class="explore1-col">
+            <h3>• vice president of information technology | <br>Junior Achievement Canada</h3>
+            <p>Working in collaboration with twenty students, I played a key role in establishing a business as part of the Junior Achievement initiative. I took charge of overseeing the company's digital presence, which involved website development and electronic finance tracking. Additionally, I assumed leadership of a team responsible for creating an ecommerce website to effectively showcase the company's products and values, attracting customers and efficiently managing sales.</p>
+        </div>
+
+        <div class="explore1-col">
+            <h3>• teacher assistant | <br> Calgary Board of Education</h3>
+            <p>I collaborated with the Calgary Board of Education to craft and execute captivating science lesson plans and activities that nurtured a growth mindset and facilitated meaningful learning experiences. I devoted more than 7 hours per week to offer extra support for science education, showcasing a profound dedication to academic excellence and ensuring the success of my students.</p>
+        </div>
+        
+        <div class="explore1-col">
+            <img src="images/llyod.jpg">
+            <h3>• math camp | <br> UWaterloo Lloyd Auckland Invitational Mathematics Workshop</h3>
+            <p>Invited among 15,000 participants to spend a week at the University of Waterloo within a cohort of 70 students for mathematical and problem solving enrichment, 
+            social activities and the great opportunity to connect with some of the most talented math students in all of Canada. I participated in mini competitions to explore 
+            theoretical and logical mathematics to solve complex problems</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!---JavaScript For Toggle Menu  --->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

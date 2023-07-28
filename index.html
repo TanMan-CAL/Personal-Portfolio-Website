@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Tanmay Shah's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Lato:ital,wght@0,300;0,700;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <!-- <a href="index.html"><img src="images/flogore.png"></a> -->
+        <div class="nav-links" id="navLinks">
+            <!-- Icon possibly change -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">homepage</a></li>
+                <li><a href="about.html">get to know me</a></li>
+                <li><a href="extra.html">extracurriculars</a></li>
+                <li><a href="explore.html">projects</a></li>
+
+            </ul>
+        </div>
+        <!-- Icon possibly change -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="ftitle">
+    <h1>imTanmayShah;</h1>
+    <h3>based in calgary, alberta<br>tech enthusiast & prospective software engineer<br>grade eleven</h3>
+    <a href="https://www.linkedin.com/in/tanmay-sh" class="explore-btn">linkedin</a>
+    <a href="https://github.com/TanMan-CAL" class="explore-btn">github</a>
+    <a href="email.html" class="explore-btn">email</a>
+ 
+    
+</div>
+
+</section>
+
+
+<!---JavaScript For Toggle Menu  --->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

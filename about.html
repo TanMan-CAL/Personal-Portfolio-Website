@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Fortnite</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Lato:ital,wght@0,300;0,700;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+<section class="header">
+    <nav>
+        <!-- <a href="index.html"><img src="images/flogore.png"></a> -->
+        <div class="nav-links" id="navLinks">
+            <!-- Icon possibly change -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">homepage</a></li>
+                <li><a href="about.html">get to know me</a></li>
+                <li><a href="extra.html">extracurriculars</a></li>
+                <li><a href="explore.html">projects</a></li>
+          
+
+            </ul>
+        </div>
+        <!-- Icon possibly change -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+
+<section class="about">
+    <h1>get to know me;</h1>
+    <div class="row">
+        <div class="about-col">
+            <h2>hello! it's great to meet you.</h2>
+            <p>Hi there! I'm Tanmay Shah, and I'm thrilled to share that as of 2023, I'll finally be starting Grade 12 at 
+                Henry Wise Wood High School. My journey in the world of programming began six years ago, just like countless others, 
+                with the humble "hello world" program. But that simple introduction ignited a spark of curiosity within me that has been 
+                driving my ambition to learn and explore ever since. Throughout these six years, I've dived deep into the world of programming, 
+                constantly seeking new challenges and opportunities to grow. From mastering the basics of different programming languages to 
+                tackling complex projects, I've found immense joy in every step of my coding adventure. <br><br>In my programming journey, I've 
+                embraced new challenges, nurturing my passion for robotics, statistics, and math. Robotics fascinates me as I bring machines to life,
+                combining coding, engineering, and creativity. The tangible results of my work excite me.
+                Statistics and math complement my coding, providing insights for data science. The problem-solving
+                nature of these subjects brings a sense of accomplishment. <br><br>As I step into Grade 12, I eagerly explore these interests through competitions
+                and clubs, anticipating their role in shaping my future academic and professional pursuits. My love for these fields drives me forward,
+                eager to innovate. Want to know more? Look at my projects / extracurriculars page. Have questions, want to collaborate? Contact me.</p>
+            
+        </div>
+        <div class="about-col">
+            <img src="images/new4.png">
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!---JavaScript For Toggle Menu  --->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

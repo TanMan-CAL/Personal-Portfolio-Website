@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Fortnite</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Lato:ital,wght@0,300;0,700;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <!-- <a href="index.html"><img src="images/flogore.png"></a> -->
+            <div class="nav-links" id="navLinks">
+                <!-- Icon possibly change -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">homepage</a></li>
+                <li><a href="about.html">get to know me</a></li>
+                <li><a href="extra.html">extracurriculars</a></li>
+                <li><a href="explore.html">projects</a></li>
+
+    
+                </ul>
+            </div>
+            <!-- Icon possibly change -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+<section class="explore">
+    <h1>projects;</h1>
+    <h4>my fascination with various technologies and software has led me to pursue passion projects in the past.</h1>
+    
+    <div class="row">
+        <div class="explore-col">
+            <img src="images/youreka.JPG">
+            <h3>• bionformatics research project |<br> Youreka Canada </h3>
+            <p>I led a self-directed research team investigating correlations between prenatal stress and immune response protein concentrations, 
+            and we utilized R to perform statistical tests and create visualizations with datasets, acquiring proficiency in basic statistical concepts such as p-values, 
+            hypothesis testing, t-tests, and ANOVAs.</p>
+        </div>
+
+
+        <div class="explore-col">
+            <h3>• vaccine distribution program | <br> Schulich Ignite (UofCalgary)</h3>
+            <p>Unbelievable! Dwayne, The Rock, Johnson, also known as the Foundation in Fortnite, has come to save the beloved Jonesy from the wrath of Doctor Slone. Both characters are coming out strong, so how will their battle progress? Help save Jonesy before it’s too late, and defeat Slone’s guards to successfully finish the Zero Point.</p>
+        </div>
+
+        <div class="explore-col">
+            <h3>• mental health tracker via kivy | <br>Calgary Youth Hackathon</h3>
+            <p>Created a user-interface with Kivy (Python framework) and object-oriented programming to address ongoing mental health issues, 
+                by designing a fully functional application-based mental health tracker.</p>
+        </div>
+
+        <div class="explore-col">
+            <img src="images/deca1.png">
+            <h3>• mern stack application | <br>Canadian National Leaderhip Conference</h3>
+            <p>Designed and developed a user-friendly student engagement tracker using MERN stack, enabling teachers and administrators to monitor student participation in school 
+                activities in real-time. Leveraged computational thinking skills to create a scalable application that can seamlessly integrate with existing school data systems.</p>
+        </div>
+
+        
+    </div>
+</section>
+
+
+
+
+<!---JavaScript For Toggle Menu  --->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
